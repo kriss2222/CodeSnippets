@@ -23,11 +23,11 @@ body {
 
 /* ======================== */
 /* Hide the checkbox from view */
-#toggle {
+#toggle2 {
     display: none;
 }
 
-.button {
+.button22 {
     display: inline-block;
     width: 90px;
     height: 35px;
@@ -37,7 +37,7 @@ body {
     cursor: pointer;
 }
 
-.button::after {
+.button22::after {
     content: url('./images/sun-line.svg');
     /* Add in the image. You could also add an icon by the using the icon's unicode (sites like fontawesome.com provide this). */
     width: 40px;
@@ -60,7 +60,7 @@ body {
         transform 1s ease-in;
 }
 
-#toggle:checked+.button::after {
+#toggle2:checked+.button::after {
     content: url('./images/moon-line.svg');
     /* Switching the images when clicked. */
     background-color: #1f257f;
