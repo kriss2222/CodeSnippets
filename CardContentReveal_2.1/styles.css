@@ -22,7 +22,7 @@ body {
 
 /* ======================== */
 
-.card {
+.card2 {
     position: relative;
     width: 250px;
     height: 250px;
@@ -38,8 +38,8 @@ body {
     overflow: hidden;
 }
 
-.card::before,
-.card::after {
+.card2::before,
+.card2::after {
     content: '';
     position: absolute;
     left: 0;
@@ -50,39 +50,39 @@ body {
     z-index: -1;
 }
 
-.card::before {
+.card2::before {
     top: 0;
     clip-path:
         polygon(0 0, 100% 0, 100% 45%, 0% 100%);
     transform: translateY(-100%);
 }
 
-.card::after {
+.card2::after {
     bottom: 0;
     clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
     transform: translateY(100%);
 }
 
-.card__content {
+.card2__content {
     opacity: 0;
     transition: opacity .25s;
 }
 
-.card__title {
+.card2__title {
     color: #6A515E;
     margin-bottom: 15PX;
 }
 
-.card__description {
+.card2__description {
     font-size: 14px;
 }
 
-.card:hover::before,
-.card:hover::after {
+.card2:hover::before,
+.card2:hover::after {
     transform: translateY(0);
 }
 
-.card:hover .card__content {
+.card2:hover .card2__content {
     opacity: 1;
     transition-delay: .75s;
 }
